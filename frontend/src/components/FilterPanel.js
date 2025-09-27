@@ -1,12 +1,12 @@
-import './FilterPanel.css';
+import "./FilterPanel.css";
 
 const FilterPanel = ({ filter, onFilterChange }) => {
   const filterOptions = [
-    { value: 'all', label: 'All Questions' },
-    { value: 'unanswered', label: 'Unanswered' },
-    { value: 'answered', label: 'Answered' },
-    { value: 'important', label: 'Important' },
-    { value: 'archived', label: 'Archived' },
+    { value: "all", label: "All Questions" },
+    { value: "unanswered", label: "Unanswered" },
+    { value: "answered", label: "Answered" },
+    { value: "important", label: "Important" },
+    { value: "archived", label: "Cleared" },
   ];
 
   return (
@@ -19,7 +19,7 @@ const FilterPanel = ({ filter, onFilterChange }) => {
           onChange={(e) => onFilterChange(e.target.value)}
           className="filter-select"
         >
-          {filterOptions.map(option => (
+          {filterOptions.map((option) => (
             <option key={option.value} value={option.value}>
               {option.label}
             </option>
