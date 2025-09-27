@@ -2,10 +2,11 @@ import "./ClassCard.css";
 
 const ClassCard = ({ classItem, onClick, user }) => {
   const getClassInfo = () => {
+    const count = classItem.students?.length || 0;
     if (user?.role === "instructor" && classItem.instructor === user._id) {
-      return `${classItem.students?.length || 1} members (Instructor joined)`;
+      return `${count + 1} members`;
     }
-    return `${classItem.students?.length || 0} students`;
+    return `${count} members`;
   };
 
   return (
