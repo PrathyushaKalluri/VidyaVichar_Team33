@@ -137,3 +137,10 @@ dist
 # Vite logs files
 vite.config.js.timestamp-*
 vite.config.ts.timestamp-*
+
+
+.gitignore
+package-lock.json
+yarn.lock
+pnpm-lock.yaml
+*/package-lock.json
