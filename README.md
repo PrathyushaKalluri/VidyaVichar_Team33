@@ -18,7 +18,7 @@ Github link - https://github.com/PrathyushaKalluri/VidyaVichar_Team33.git
         |                            |                               |
         |  Auth, Q&A, Classes, UI    |  API, Auth, Logic, Models     |  Data Storage
         +----------------------------+-------------------------------+
-
+```
 
 ## Design Assumption
 
@@ -107,4 +107,7 @@ Github link - https://github.com/PrathyushaKalluri/VidyaVichar_Team33.git
 - For development, ensure both frontend and backend servers are running.
 - Update API endpoints in frontend/src/utils/api.js if backend runs on a different port or host.
 - For production, consider environment variables and secure deployment practices.
+
+```
+
 ```
