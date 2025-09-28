@@ -42,6 +42,12 @@ Github link - https://github.com/PrathyushaKalluri/VidyaVichar_Team33.git
 - Users can review the questions after the session by using access code of that particular class.
 - TA's can't add a question and can't create a class but can mark the questions as answered or unanswered or Important or clear the questions.
 - TA's can use the access code and review the questions later and resolve the issues if had any for the students.
+- Our assumption for handling duplicate questions is that - "What is your name" and "What is your name?" (questions with and without question mark) are considered as different questions.
+- The backend is always available and connected to the database.
+- Each question is associated with a class and has a unique identifier.
+- Users are authenticated, so only authorized users can view or post questions.
+- The frontend fetches the latest questions from the backend each time the class page is loaded or refreshed.
+- There is no local-only (browser) storage for questions; persistence is handled entirely by the backend.
 
 ## Implementation Details
 
